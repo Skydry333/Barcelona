@@ -53,7 +53,6 @@ header {
     color: #454547;
     text-decoration: none;
     transition: all 0.2s ease;
-
 }
 .menu > ul li{
     position: relative;
@@ -275,6 +274,9 @@ header {
 
 
 @media(min-width: 767px){
+    .fan {
+        background: url('../img/fans_photo.jpg')0 0/100% 100% no-repeat fixed;
+    }
     .article__title {
         padding-bottom: 2%;
     }
@@ -335,8 +337,57 @@ header {
         flex: 0 1 50%;
         padding: 2% 7% 2% 7%;
     }
+
+
+    .fan__container{
+        box-shadow: 1px 0px 100px 2px #000000 inset;
+    }
+    .fan__letter {
+        color: #fff;
+        padding: 0px 5% 3% 5%;
+    }
+    .letter__text > p{
+        text-indent: 30px;
+    }
 }
 @media(max-width: 767px){
+    .menu li ul{
+        position: absolute;
+        min-width: 200px;
+        display: none;
+        margin-left: 15%;
+    }
+    .menu li > ul li a{
+        padding: 10px;
+        text-transform: none;
+        background: #a9a9ac;
+    }
+    .menu li:hover > ul{
+        display: block;
+        z-index: 60;
+    }
+    
+
+    .fan {
+        background: -webkit-linear-gradient(45deg, rgb(231, 81, 58), rgb(78, 76, 191))0 0/100% 100% no-repeat fixed;
+        background: -moz-linear-gradient(45deg, rgb(231, 81, 58), rgb(78, 76, 191))0 0/100% 100% no-repeat fixed;
+        background: linear-gradient(45deg, rgb(231, 81, 58), rgb(78, 76, 191))0 0/100% 100% no-repeat fixed;
+        /* background: url('../img/fans_photo.jpg')0 0/100% 100% no-repeat fixed; */
+    }
+    .fan__container{
+        box-shadow: 1px 0px 100px 2px #000000 inset;
+        border-radius: 10px;
+    }
+    .fan__letter {
+        color: #fff;
+        padding: 0px 5% 3% 5%;
+    }
+    .letter__text > p{
+        text-indent: 30px;
+        padding: 1% 1.5%;
+    }
+
+
     body.lock{
         overflow: hidden;
     }
@@ -447,6 +498,21 @@ header {
 
 
 @media(max-width: 550px){
+    .menu li ul{
+        position: absolute;
+        min-width: 150px;
+        display: none;
+        margin-left: 0;
+    }
+    .menu li > ul li a{
+        padding: 10px;
+        text-transform: none;
+        background: #a9a9ac;
+    }
+    .menu li:hover > ul{
+        display: block;
+        z-index: 60;
+    }
     .title-sub {
         font-size: 20px;
         font-weight: 600;
@@ -462,30 +528,17 @@ header {
 }
 /*--------------------------------------------FANS_PAGE-----------------------------------*/
 
-.fan {
-    background: url('../img/fans_photo.jpg')0 0/100% 100% no-repeat fixed;
-}
+
 .fan__title {
     padding: 6% 0px 5% 0px;
 }
-.fan__container{
-    box-shadow: 1px 0px 100px 2px #000000 inset;
 
-}
-.fan__letter {
-    color: #fff;
-    padding: 0px 5% 3% 5%;
-}
 .letter__text {
     padding-bottom: 2%;
     line-height: 150%;
     letter-spacing: 0.5px;
 }
-.letter__text > p{
-    text-indent: 30px;
-}
-.letter__data {
-}
+
 .letter__row {
     display: flex;
     justify-content: space-between;
