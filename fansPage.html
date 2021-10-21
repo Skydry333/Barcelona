@@ -50,8 +50,8 @@
                         </div>
                         <div class="letter__data">
                             <div class="letter__row">
-                                    <div class="letter__date">
-                                    <h6>10.12.21  <span>20:23</span></h6>
+                                <div class="letter__date">
+                                    <h6>10.12.2021  <span>20:23</span></h6>
                                 </div>
                                 <div class="letter__author">
                                     Deil Bander
@@ -69,7 +69,7 @@
                         <div class="letter__data">
                             <div class="letter__row">
                                     <div class="letter__date">
-                                    <h6>05.06.18  <span>20:23</span></h6>
+                                    <h6>05.06.2018  <span>20:23</span></h6>
                                 </div>
                                 <div class="letter__author">
                                     Jim Coneli
@@ -87,7 +87,7 @@
                         <div class="letter__data">
                             <div class="letter__row">
                                     <div class="letter__date">
-                                    <h6>15.10.16  <span>20:23</span></h6>
+                                    <h6>15.10.2016  <span>20:23</span></h6>
                                 </div>
                                 <div class="letter__author">
                                     Sara Slimmer
@@ -99,14 +99,16 @@
                 <div class="form">
                     <div class="form__title"><h2>You can also write a letter to your heroes</h2></div>
                     <div class="form__area">
-                        <form action="#" method="get">
+                        <form action="#" name="form" onsubmit="return false">
                             <textarea name="text" class="textarea" placeholder="write a letter..."></textarea>
                             <div class="form__botton">
                                 <button type="submit">
                                     <span>send</span> 
                                 </button>
                             </div>
-                            
+                            <div class="valid__error">
+                                <p class="empty">Your letter is empty!!!. . . Try again</p> 
+                            </div>
                         </form>
                     </div>
                 </div>                

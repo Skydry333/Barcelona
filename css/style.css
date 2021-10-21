@@ -1,4 +1,4 @@
-/*reset*/
+/*reset-list*/
 *{padding: 0;margin: 0;border: 0;font: inherit;vertical-align: baseline;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
@@ -227,6 +227,83 @@ header {
     text-decoration: underline;
 }
 
+.valid__error{
+    display: none;
+}
+.valid__error p{
+    color: rgb(248, 221, 221);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.active{
+    display: block;
+}
+/*--------------------------------------------FANS_PAGE-----------------------------------*/
+
+
+.fan__title {
+    padding: 6% 0px 5% 0px;
+}
+
+.letter__text {
+    padding-bottom: 2%;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+
+.letter__row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+}
+.letter__date {
+    
+}
+.letter__author {
+    text-decoration: underline;
+}
+h6 span{
+    padding-left: 5px;
+}
+
+
+.form {
+    padding: 3%;
+}
+.form__title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 1%;
+}
+.form__area{
+    position: relative;
+}
+.textarea {
+    width: 50%;
+    height: 100px;
+    background-color: rgb(209, 202, 198);
+    padding: 5px;
+    border-radius: 5px;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(209, 202, 198);
+    letter-spacing: 0.3px;
+}
+button:hover{
+    background-color: rgb(192, 175, 165);
+}
+.form__botton{
+    position: absolute;
+    left: 53%;
+    bottom: 5%;
+}
+
+/*----------------------------- MEDIA QUERY-------------------------------------*/
 
 @media(min-width: 992px){
     .victory__container {
@@ -526,67 +603,4 @@ header {
     .photo__container{
         padding-bottom: 30px;
     }
-}
-/*--------------------------------------------FANS_PAGE-----------------------------------*/
-
-
-.fan__title {
-    padding: 6% 0px 5% 0px;
-}
-
-.letter__text {
-    padding-bottom: 2%;
-    line-height: 150%;
-    letter-spacing: 0.5px;
-}
-
-.letter__row {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 500;
-    font-size: 16px;
-}
-.letter__date {
-    
-}
-.letter__author {
-    text-decoration: underline;
-}
-h6 span{
-    padding-left: 5px;
-}
-
-
-.form {
-    padding: 3%;
-}
-.form__title {
-    color: #fff;
-    font-weight: 600;
-    font-size: 20px;
-    padding: 1%;
-}
-.form__area{
-    position: relative;
-}
-.textarea {
-    width: 50%;
-    height: 100px;
-    background-color: rgb(209, 202, 198);
-    padding: 5px;
-    border-radius: 5px;
-}
-button{
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: rgb(209, 202, 198);
-    letter-spacing: 0.3px;
-}
-button:hover{
-    background-color: rgb(192, 175, 165);
-}
-.form__botton{
-    position: absolute;
-    left: 53%;
-    bottom: 5%;
 }
