@@ -21,10 +21,7 @@ forma.addEventListener('submit', (event) =>{
     if(!text_fild.value){
         error.classList.add('active');
         event.preventDefault();
-    } else if(text_fild.value.length < 5){
-
-    }
-    else{
+    } else{
         letter_area.insertAdjacentHTML(
             'beforebegin',
             `<div class="fan__letter">
