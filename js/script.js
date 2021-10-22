@@ -49,9 +49,7 @@ forma.addEventListener('submit', (event) =>{
                         <div class="letter__date">
                             <h6> ${day}.${month+1}.${year} <span>${time_h}:${time_m + 0}</span></h6>
                         </div>
-                        <div class="letter__author">
-                            Deil Bander
-                        </div>
+                        
                     </div>  
                 </div>
             </div>
