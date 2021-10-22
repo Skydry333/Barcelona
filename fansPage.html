@@ -96,16 +96,19 @@
                         </div>
                     </div>
                 </div>
+                <!----------------------------------   ------------   ------------------    -----------------   -------------- - ------------ -->
                 <div class="form">
                     <div class="form__title"><h2>You can also write a letter to your heroes</h2></div>
                     <div class="form__area">
                         <form action="#" name="form" onsubmit="return false">
-                            <textarea name="text" class="textarea" placeholder="write a letter..."></textarea>
+                            <textarea autocomplete="off" maxlength="1000" name="text"  class="textarea" placeholder="write a letter..."></textarea>
                             <div class="form__botton">
                                 <button type="submit">
                                     <span>send</span> 
                                 </button>
                             </div>
+                            <div class="text__limit">Limit is <span></span> symbols</div>
+
                             <div class="valid__error">
                                 <p class="empty">Your letter is empty!!!. . . Try again</p> 
                             </div>
